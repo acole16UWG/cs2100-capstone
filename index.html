@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV Show Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">TV Show Explorer</h1>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#results">Search</a>
+      <a href="#watchlist">Watchlist</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="controls" aria-labelledby="controls-heading">
+      <h2 id="controls-heading" class="visually-hidden">Search and filter shows</h2>
+      <form id="search-form" class="controls-form">
+        <label class="field field-grow">
+          Show name
+          <input type="search" id="search-input" name="q" placeholder="Try &quot;breaking&quot; or &quot;the office&quot;">
+        </label>
+        <label class="field">
+          Genre
+          <select id="genre-select" name="genre">
+            <option value="">All genres</option>
+          </select>
+        </label>
+        <label class="field">
+          Sort by
+          <select id="sort-select" name="sort">
+            <option value="rating">Rating</option>
+            <option value="name">Name</option>
+          </select>
+        </label>
+        <button type="submit" class="button">Search</button>
+      </form>
+    </section>
+
+    <section id="results" class="results" aria-labelledby="results-heading">
+      <h2 id="results-heading">Results</h2>
+      <p class="status" id="status">Search for a show to see results. Open the browser console to view the data from the API.</p>
+      <ul class="card-grid" id="card-grid">
+        <!-- Static placeholder cards; real cards will be rendered from API data in Milestone 3 -->
+        <li class="card">
+          <div class="card-poster">Poster</div>
+          <div class="card-body">
+            <h3 class="card-title">Show title</h3>
+            <p class="card-meta">Genres &middot; Rating</p>
+            <button type="button" class="button button-quiet">Details</button>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-poster">Poster</div>
+          <div class="card-body">
+            <h3 class="card-title">Show title</h3>
+            <p class="card-meta">Genres &middot; Rating</p>
+            <button type="button" class="button button-quiet">Details</button>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-poster">Poster</div>
+          <div class="card-body">
+            <h3 class="card-title">Show title</h3>
+            <p class="card-meta">Genres &middot; Rating</p>
+            <button type="button" class="button button-quiet">Details</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="watchlist" class="watchlist" aria-labelledby="watchlist-heading">
+      <h2 id="watchlist-heading">My watchlist</h2>
+      <p class="status">Shows you save will appear here.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Data from the <a href="https://www.tvmaze.com/api">TVMaze API</a>. CS2100 Capstone project.</p>
+  </footer>
+</body>
+</html>
