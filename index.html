@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
+
 <body>
   <header class="site-header">
     <h1 class="site-title">TV Show Explorer</h1>
@@ -22,7 +24,8 @@
       <form id="search-form" class="controls-form">
         <label class="field field-grow">
           Show name
-          <input type="search" id="search-input" name="q" placeholder="Try &quot;breaking&quot; or &quot;the office&quot;">
+          <input type="search" id="search-input" name="q"
+            placeholder="Try &quot;breaking&quot; or &quot;the office&quot;">
         </label>
         <label class="field">
           Genre
@@ -43,7 +46,8 @@
 
     <section id="results" class="results" aria-labelledby="results-heading">
       <h2 id="results-heading">Results</h2>
-      <p class="status" id="status">Search for a show to see results. Open the browser console to view the data from the API.</p>
+      <p class="status" id="status">Search for a show to see results. Open the browser console to view the data from the
+        API.</p>
       <ul class="card-grid" id="card-grid">
         <!-- Static placeholder cards; real cards will be rendered from API data in Milestone 3 -->
         <li class="card">
@@ -83,4 +87,5 @@
     <p>Data from the <a href="https://www.tvmaze.com/api">TVMaze API</a>. CS2100 Capstone project.</p>
   </footer>
 </body>
+
 </html>
