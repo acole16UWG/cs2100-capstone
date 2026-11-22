@@ -4,3 +4,5 @@
 - Added styles.css
 - Added app.js and formatted all files within folder
 - Altered styles.css to be more in line with vision
+- ALtered app.js and index.html to be in line with final vision
+- Ensured clean coding practices within app.js for ease of reading and use
